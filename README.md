@@ -52,16 +52,21 @@ For info on how to setup a telegram bot, go [here](https://core.telegram.org/bot
     docker-compose up -d
     ```
 
-### Running Locally
+### Running Locally with uv
 
-1. Install the required dependencies:
+1. Init virtual env:
 
     ```sh
-    pip install -r requirements.txt
+    uv venv
     ```
 
-2. Run the application:
+2. Install dependencies:
 
     ```sh
-    python main.py
+    uv pip install -e .
+    ```
+
+3. Run
+    ```sh
+    uv run main.py
     ```
