@@ -1,16 +1,12 @@
 [project]
 name = "stock"
 version = "0.1.0"
-description = "Add your description here"
+description = "NVIDIA Stock Checker using official API"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
-    "bs4>=0.0.2",
-    "playwright>=1.49.1",
+    "aiohttp>=3.11.11",
     "python-dotenv>=1.0.1",
     "python-telegram-bot>=21.10",
     "requests>=2.32.3",
-    "selenium>=4.28.1",
-    "webdriver-manager>=4.0.2",
-    "win10toast>=0.9",
 ]
